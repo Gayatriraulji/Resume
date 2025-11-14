@@ -1,3 +1,27 @@
+.navbar-brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: black;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.navbar-nav{
+    font-size: 1.1rem;
+    font-size: 1.5rem;
+    font-weight: 100;
+     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+     
+
+}
+
+@media(max-width: 693px) {
+       .div1, .div2, .div3, .div4,.div5, .div6 {
+        flex-direction: column;
+        padding: 80px;
+    }
+}
+
+
+
 
 /* General Styles for Sections */
 .div1, .div2, .div3, .div4 {
@@ -378,3 +402,225 @@
 .social-link:nth-child(4) i { color: #e1306c; } /* Instagram */
 .social-link:nth-child(5) i { color: #0077b5; } /* LinkedIn */
 
+@media (max-width: 992px) {
+    .navbar-brand { font-size: 1.5rem; }
+    .navbar-nav { font-size: 1.2rem; }
+
+    .div1 {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+    }
+/* ============================= */
+/* Responsive Fix for Education Section */
+/* ============================= */
+
+@media (max-width: 992px) {
+  .div3 {
+    padding: 40px 20px;
+    height: auto;
+  }
+
+  .education-container {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .education-grid {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .education-card {
+    width: 90%;
+    max-width: 400px;
+    min-width: unset;
+  }
+
+  .education-card img {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+@media (max-width: 576px) {
+  .div3 {
+    padding: 30px 15px;
+    text-align: center;
+  }
+
+  .education-card {
+    width: 100%;
+    max-width: 350px;
+    padding: 15px;
+  }
+
+  .education-card h3 {
+    font-size: 1.3rem;
+  }
+
+  .education-card p {
+    font-size: 1rem;
+  }
+
+  .education-card img {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+    .content-div1 { max-width: 100%; padding-top: 20px; }
+    .image-div1 { max-width: 80%; margin-top: 30px; }
+
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-image {
+        max-width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .skills { justify-content: center; }
+
+    .education-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .education-card { max-width: 90%; }
+
+    .skills-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skill-category { width: 80%; }
+
+    .soft-skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .social-links {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .social-link { min-width: 80%; }
+}
+
+@media (max-width: 576px) {
+    .content-div1 h1 { font-size: 1.8rem; }
+    .content-div1 p { font-size: 1rem; }
+    .about-content h2 { font-size: 2rem; }
+    .soft-skills-grid { grid-template-columns: 1fr; }
+}
+/* ============================= */
+/* Responsive Fix for Home & About */
+/* ============================= */
+
+@media (max-width: 1024px) {
+  /* Home Section */
+  .div1 {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .content-div1 {
+    max-width: 100%;
+    padding-top: 20px;
+  }
+
+  .content-div1 h1 {
+    font-size: 2rem;
+  }
+
+  .content-div1 p {
+    font-size: 1.1rem;
+  }
+
+  .image-div1 {
+    position: static !important;
+    margin-top: 20px;
+    max-width: 80%;
+    height: auto !important;
+    padding: 0 !important;
+  }
+
+  .image-div1 img {
+    width: 100%;
+    height: auto;
+    border: 3px solid black;
+  }
+
+  /* About Section */
+  .div2 {
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+    padding: 50px 20px;
+  }
+
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-image {
+    max-width: 80%;
+    margin-bottom: 20px;
+  }
+
+  .about-content {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .about-content h2 {
+    font-size: 2rem;
+  }
+
+  .about-content p {
+    font-size: 1.1rem;
+  }
+}
+
+/* Mobile Devices */
+@media (max-width: 600px) {
+  .div1 {
+    padding: 30px 15px;
+  }
+
+  .content-div1 h1 {
+    font-size: 1.6rem;
+  }
+
+  .content-div1 p {
+    font-size: 1rem;
+  }
+
+  .image-div1 {
+    max-width: 100%;
+  }
+
+  .div2 {
+    padding: 30px 15px;
+  }
+
+  .about-image {
+    max-width: 100%;
+  }
+
+  .about-content h2 {
+    font-size: 1.8rem;
+  }
+
+  .about-content p {
+    font-size: 1rem;
+  }
+}
